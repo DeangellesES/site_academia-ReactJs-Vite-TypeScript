@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* INICIO SECAO TOPO  */
+.titulo-topo {
+  color: #ff471a;
+}
+
+.seta-link {
+  font-size: .9rem;
+}
+
+/* INICIO SEÇÃO ESCOLHER */
+.escolher-caixa { 
+  font-size: 3rem;
+  background-color: #ff471a;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  padding: .7rem;
+}
+
+/* INICIO SEÇÃO CONHEÇA */
+div.swiper-button-prev,
+div.swiper-button-next {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: .7rem;
+} 
+
+/* INICIO SECAO PLANOS */
+.plano-preco {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #70706bff;
+}
+
+.paragrafos-plano {
+  color: #ff471a;
+  padding-top: .4rem;
+  margin-right: .5rem;
+  
+}
