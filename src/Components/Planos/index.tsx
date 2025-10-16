@@ -35,8 +35,8 @@ const SecaoPlanosPlanosCaixa = styled.div`
     display: grid;
     // gap: 1rem;
     border-radius: 15px;
-    width: 340px;
-    height: 500px;
+    width: 360px;
+    height: 480px;
     padding: 2rem 2rem 4rem 2rem;
 `
 const SecaoPlanosPlanosCaixaPremium = styled.div`
@@ -46,15 +46,15 @@ const SecaoPlanosPlanosCaixaPremium = styled.div`
     display: grid;
     // gap: 1rem;
     border-radius: 15px;
-    width: 340px;
+    width: 360px;
+    height: 480px;
     border: 2px solid #ff471a;
-    height: 500px;
     position: relative;
 `
 const SecaoPlanosPlanosCaixaCategoria =styled.p`
     position: absolute;
-    top: -2%;
-    left: 30%;
+    top: -2.5%;
+    left: 28%;
     text-transform: uppercase;
     color: #fff;
     background-color: #ff471a;
@@ -62,7 +62,6 @@ const SecaoPlanosPlanosCaixaCategoria =styled.p`
     border-radius: 20px;
     font-weight: 900;
 `
-
 const SecaoPlanosPlanosCaixaTitulo = styled.h2`
     font-size: 1.6rem;
 `
@@ -138,7 +137,7 @@ function Planos() {
                     <SecaoPlanosPlanosCaixaParagrafoDois><FaCheck className="paragrafos-plano" />Área de cardio premium</SecaoPlanosPlanosCaixaParagrafoDois>
                     <SecaoPlanosPlanosCaixaAncoraPremium href="">Assinar Agora</SecaoPlanosPlanosCaixaAncoraPremium>
                 </SecaoPlanosPlanosCaixaPremium>
-
+ 
                 <SecaoPlanosPlanosCaixa>
                     <SecaoPlanosPlanosCaixaTitulo>Elite</SecaoPlanosPlanosCaixaTitulo>
                     <SecaoPlanosPlanosCaixaParagrafoUm>Para resultados máximos</SecaoPlanosPlanosCaixaParagrafoUm>

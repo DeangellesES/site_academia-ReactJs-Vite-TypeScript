@@ -15,7 +15,9 @@ const SecaoTopo = styled.section`
 `
 
 const SecaoTopoFundo = styled.div`
-    background-color: rgba(29, 17, 17, 0.62);
+    background: radial-gradient(rgba(29, 17, 17, 0.06), rgba(0, 0, 0, 1));
+    // background-color: rgba(29, 17, 17, 0.62);
+    // background-color: rgba(29, 17, 17, 0.62);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,18 +39,25 @@ const SecaoTopoParagrafo = styled.p`
 `
 const SecaoTopoCaixaLinks = styled.div`
     display: flex;
-    gap: .8rem;
+    gap: 2rem;
 `
 const SecaoTopoLinkUm = styled.a`
     color: #fff;
     background-color: #ff471a;
     padding: 1rem 2.5rem;
     border-radius: 12px;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 1.3rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px 0 #ff471a;
+    }
 `
 const SecaoTopoLinkDois = styled.a`
     display: flex;
@@ -59,7 +68,13 @@ const SecaoTopoLinkDois = styled.a`
     border-radius: 12px;
     border: 1px solid #ff5c33;
     padding: 1rem 2.5rem;
-    background-color: rgba(66, 63, 63, 0.36);
+    background-color: rgba(66, 63, 63, 0.48);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+     &:hover {
+        background-color: rgba(66, 63, 63, 0.28);
+    }
 `
 const SecaoTopoDados = styled.div`
     display: flex;
@@ -84,8 +99,8 @@ function Topo() {
                 <SecaoTopoTitulo>Transforme Seu <span className="titulo-topo">Corpo e Mente</span> </SecaoTopoTitulo>
                 <SecaoTopoParagrafo>Academia premium com equipamentos de última geração, treinadores especializados e ambiente motivador para você alcançar seus objetivos</SecaoTopoParagrafo>
                 <SecaoTopoCaixaLinks>
-                    <SecaoTopoLinkUm>Comece Agora <FaArrowRight className="seta-link"/> </SecaoTopoLinkUm>
-                    <SecaoTopoLinkDois><CiPlay1 className="seta-link"/> Conheça a Academia</SecaoTopoLinkDois>
+                    <SecaoTopoLinkUm>Comece Agora <FaArrowRight className="seta-link" /> </SecaoTopoLinkUm>
+                    <SecaoTopoLinkDois><CiPlay1 className="seta-link" /> Conheça a Academia</SecaoTopoLinkDois>
                 </SecaoTopoCaixaLinks>
 
                 <SecaoTopoDados>
