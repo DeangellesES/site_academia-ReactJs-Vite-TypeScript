@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,23 @@
 }
 
 /* INICIO SECAO TOPO  */
+/* SURGIR */
+/* DE BAIXO PRA CIMA TITULO PÁGINA INICIAL TOPO*/
+
+.js-scroll.ativo {
+  animation: scrollSlide 1s forwards;
+}
+
+@keyframes scrollSlide {
+  from {
+    transform: translate3d(0, 100px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .titulo-topo {
   color: #ff471a;
 }
@@ -14,7 +34,12 @@
 }
 
 /* INICIO SEÇÃO ESCOLHER */
-.escolher-caixa { 
+
+.escolher-caixa:hover .escolher-caixa_icone {
+  box-shadow: 0px 0px 30px 0 #ff471a;  
+}
+
+.escolher-caixa_icone{ 
   font-size: 3rem;
   background-color: #ff471a;
   color: #fff;
@@ -23,6 +48,7 @@
   border-radius: 20px;
   padding: .7rem;
 }
+
 
 /* INICIO SEÇÃO CONHEÇA */
 div.swiper-button-prev,
@@ -38,6 +64,7 @@ div.swiper-button-next {
   font-size: 1.4rem;
   font-weight: 100;
   color: #70706bff;
+  font-family: "Open Sans", sans-serif;
 }
 
 .paragrafos-plano {
@@ -77,4 +104,9 @@ div.swiper-button-next {
   margin-right: 1rem;
   padding: .8rem;
   border-radius: 50%;
+}
+
+.rodape-sociais:hover {
+  background-color: #ff471a;
+  cursor: pointer;
 }

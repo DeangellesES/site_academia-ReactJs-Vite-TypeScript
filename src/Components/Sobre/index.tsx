@@ -20,6 +20,9 @@ const SecaoSobreEsquerda = styled.div`
 const SecaoSobreEsquerdoTitulo = styled.h1`
     font-size: 3.5rem;
     font-weight: 600;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.1rem;
 `
 const SecaoSobreEsquerdoParagrafo = styled.p`
     font-size: 1.3rem;
@@ -30,13 +33,19 @@ const SecaoSobreEsquerdoBtn = styled.a`
     width: fit-content;
     height: fit-content;
     color: #fff;
-    padding: 1rem 3.5rem;
+    padding: 1rem 3rem;
     border-radius: 10px;
     font-size: 1.3rem;
     font-weight: 600;
     text-decoration: none;
     margin-top: 1.1rem;
     text-transform: capitalize;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px 3px #ff471a; 
+    }
 `
 const SecaoSobreDireita = styled.div`
     display: grid;
@@ -52,6 +61,9 @@ const SecaoSobreDireitaCima = styled.div`
 `
 const SecaoSobreDireitaCimaTitulo = styled.h2`
     font-size: 1.9rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
 `
 const SecaoSobreDireitaCimaCaixa = styled.div`
     display: flex;

@@ -18,8 +18,10 @@ const SecaoEscolherCaixaTitulo = styled.div`
     text-align: center;
 `
 const SecaoEscolherCaixaTituloTitulo = styled.h1`
-    font-size: 3.8rem;
-    font-weight: 800
+    font-size: 3.4rem;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-style: normal;
+    letter-spacing: 0.2rem;
 `
 const SecaoEscolherCaixaTituloParagrafo = styled.p`
     font-size: 1.3rem;
@@ -33,11 +35,16 @@ const SecaoEscolherInformações = styled.div`
     gap: 1.4rem;
 `
 const SecaoEscolherInformaçõesCaixaInterna = styled.div`
-    // box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
-    border: 1px solid #cfcfceff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); 
     border-radius: 15px;
     text-align: center;
     padding: 2rem;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2); 
+    }
 `
 const SecaoEscolherInformaçõesTitulo = styled.h2`
     padding: .9rem 0;
@@ -55,23 +62,23 @@ function Escolher() {
             </SecaoEscolherCaixaTitulo>
 
             <SecaoEscolherInformações>
-                <SecaoEscolherInformaçõesCaixaInterna>
-                    <LiaDumbbellSolid className="escolher-caixa"/>
+                <SecaoEscolherInformaçõesCaixaInterna className="escolher-caixa">
+                    <LiaDumbbellSolid className="escolher-caixa_icone"/>
                     <SecaoEscolherInformaçõesTitulo>Equipamentos Premium</SecaoEscolherInformaçõesTitulo>
                     <SecaoEscolherInformaçõesParagrafo>Equipamentos de última geração das melhores marcas do mercado para seu treino ideal</SecaoEscolherInformaçõesParagrafo>
                 </SecaoEscolherInformaçõesCaixaInterna>
-                <SecaoEscolherInformaçõesCaixaInterna>
-                    <MdPeopleAlt className="escolher-caixa"/>
+                <SecaoEscolherInformaçõesCaixaInterna className="escolher-caixa">
+                    <MdPeopleAlt className="escolher-caixa_icone"/>
                     <SecaoEscolherInformaçõesTitulo>Treinadores Especializados</SecaoEscolherInformaçõesTitulo>
                     <SecaoEscolherInformaçõesParagrafo>Equipe certificada e experiente para te acompanhar em cada etapa da sua jornada</SecaoEscolherInformaçõesParagrafo>
                 </SecaoEscolherInformaçõesCaixaInterna>
-                <SecaoEscolherInformaçõesCaixaInterna>
-                    <GoTrophy className="escolher-caixa"/>
+                <SecaoEscolherInformaçõesCaixaInterna className="escolher-caixa">
+                    <GoTrophy className="escolher-caixa_icone"/>
                     <SecaoEscolherInformaçõesTitulo>Resultados Comprovados</SecaoEscolherInformaçõesTitulo>
                     <SecaoEscolherInformaçõesParagrafo>Milhares de alunos que já transformaram suas vidas com nossa metodologia</SecaoEscolherInformaçõesParagrafo>
                 </SecaoEscolherInformaçõesCaixaInterna>
-                <SecaoEscolherInformaçõesCaixaInterna>
-                    <IoMdTime className="escolher-caixa"/>
+                <SecaoEscolherInformaçõesCaixaInterna className="escolher-caixa">
+                    <IoMdTime className="escolher-caixa_icone"/>
                     <SecaoEscolherInformaçõesTitulo>Horário Flexível</SecaoEscolherInformaçõesTitulo>
                     <SecaoEscolherInformaçõesParagrafo>Aberto 24h por dia, 7 dias por semana. Treine quando for melhor para você</SecaoEscolherInformaçõesParagrafo>
                 </SecaoEscolherInformaçõesCaixaInterna>

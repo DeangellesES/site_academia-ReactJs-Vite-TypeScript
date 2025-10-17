@@ -31,7 +31,9 @@ const SecaoRodapeCaixaTitulo = styled.div`
 const SecaoRodapeTitulo = styled.h2`
     font-size: 1.8rem;
     font-weight: 600;
-    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
 `
 const SecaoRodapeCaixaParagrafo = styled.p`
     font-size: 1.2rem;

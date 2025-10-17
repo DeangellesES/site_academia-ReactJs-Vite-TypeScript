@@ -13,6 +13,9 @@ const SecaoPlanosTitulo = styled.h1`
     text-align: center;
     color: #fff;
     font-size: 3.7rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
 `
 const SecaoPlanosParagrafo = styled.p`
     text-align: center;
@@ -38,6 +41,12 @@ const SecaoPlanosPlanosCaixa = styled.div`
     width: 360px;
     height: 480px;
     padding: 2rem 2rem 4rem 2rem;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1); 
+    }
+
 `
 const SecaoPlanosPlanosCaixaPremium = styled.div`
     background-color: #fff;
@@ -50,6 +59,11 @@ const SecaoPlanosPlanosCaixaPremium = styled.div`
     height: 480px;
     border: 2px solid #ff471a;
     position: relative;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1); 
+    }
 `
 const SecaoPlanosPlanosCaixaCategoria =styled.p`
     position: absolute;
@@ -63,7 +77,10 @@ const SecaoPlanosPlanosCaixaCategoria =styled.p`
     font-weight: 900;
 `
 const SecaoPlanosPlanosCaixaTitulo = styled.h2`
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
 `
 const SecaoPlanosPlanosCaixaParagrafoUm = styled.p`
     color: #70706bff;
@@ -72,6 +89,8 @@ const SecaoPlanosPlanosCaixaParagrafoPreco = styled.p`
     font-size: 2.6rem;
     font-weight: 900;
     padding: 1rem 0;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-style: normal;
 `
 const SecaoPlanosPlanosCaixaParagrafoDois = styled.p`
     color: #70706bff;
@@ -81,18 +100,25 @@ const SecaoPlanosPlanosCaixaAncora = styled.a`
     width: 100%;
     border: 1px solid #a5a5a0ff;
     text-align: center;
-    padding: .7rem 0;
+    padding: .8rem 0;
     color: #70706bff;
     border-radius: 10px;
     text-decoration: none;
     font-size: 1.2rem;
     margin-top: 1.5rem;
+    height: fit-content;
+    transition: background-color 0.9s;
+
+    &:hover {
+        background-color: #ff471a;
+        color: #fff;
+    }
 `
 const SecaoPlanosPlanosCaixaAncoraPremium = styled.a`
     width: 100%;
     border: 1px solid #a5a5a0ff;
     text-align: center;
-    padding: .7rem 0;
+    padding: .8rem 0;
     color: #fff;
     border-radius: 10px;
     text-decoration: none;
@@ -100,6 +126,13 @@ const SecaoPlanosPlanosCaixaAncoraPremium = styled.a`
     margin-top: 1.5rem;
     background-color: #ff471a;
     font-weight: 900;
+    height: fit-content;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px 3px #ff471a; 
+    }
 `
     
 const SecaoPlanosUltimoParagrafo = styled.p`

@@ -23,6 +23,9 @@ const SecaoConheca = styled.section`
 const SecaoConhecaoTitulo = styled.h1`
     font-size: 3.8rem;
     font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    letter-spacing: -4px;
 `
 const SecaoConhecaoParagrafo = styled.p`
     font-size: 1.3rem;
